@@ -1,21 +1,4 @@
-variable "db_account_name" {
-  description = "The account name of click house db"
-  type        = string
-  default     = "tf_testacc1"
-}
-
-variable "db_account_pwd" {
-  description = "The account password of click house db"
-  type        = string
-  default     = "Tf-test1"
-}
-
-variable "db_description" {
-  description = "The description of click house cluster"
-  type        = string
-  default     = "Tf-description"
-}
-
+#alicloud_click_house_db_cluster
 variable "db_cluster_version" {
   description = "The cluster version of click house db"
   type        = string
@@ -34,10 +17,22 @@ variable "db_cluster_class" {
   default     = "S8"
 }
 
+variable "db_description" {
+  description = "The description of click house cluster"
+  type        = string
+  default     = ""
+}
+
 variable "db_node_group_count" {
   description = "The node group count of click house db"
+  type        = number
+  default     = 1
+}
+
+variable "payment_type" {
+  description = "The payment type of the resource."
   type        = string
-  default     = "1"
+  default     = "PayAsYouGo"
 }
 
 variable "db_node_storage" {
@@ -55,4 +50,18 @@ variable "db_storage_type" {
 variable "db_vswitch_id" {
   description = "The vswitch id of  click house db"
   type        = string
+  default     = ""
+}
+
+#alicloud_click_house_account
+variable "db_account_name" {
+  description = "The account name of click house db"
+  type        = string
+  default     = ""
+}
+
+variable "db_account_pwd" {
+  description = "The account password of click house db"
+  type        = string
+  default     = ""
 }

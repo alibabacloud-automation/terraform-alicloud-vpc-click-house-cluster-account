@@ -9,8 +9,8 @@ terraform-alicloud-vpc-click-house-cluster-account
 
 本 Module 支持创建以下资源:
 
-* [alicloud_msc_sub_contact](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/msc_sub_contact)
-* [alicloud_msc_sub_subscription](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/msc_sub_subscription)
+* [alicloud_click_house_db_cluster](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/click_house_db_cluster)
+* [alicloud_click_house_account](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/msc_sub_subscription)
 
 ## 用法
 
@@ -18,8 +18,6 @@ terraform-alicloud-vpc-click-house-cluster-account
 module "example" {
   source = "terraform-alicloud-modules/vpc-click-house-cluster-account/alicloud"
   db_vswitch_id = "vsw-acwjal1kd9kala"
-  contract_position = "CEO"
-  subscription_tts_status = 0
 }
 ```
 

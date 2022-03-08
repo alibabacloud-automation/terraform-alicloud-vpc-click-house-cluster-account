@@ -18,8 +18,6 @@ These types of resources are supported:
 module "example" {
   source                  = "terraform-alicloud-modules/vpc-click-house-cluster-account/alicloud"
   db_vswitch_id           = "vsw-acwjal1kd9kala"
-  contract_position       = "CEO"
-  subscription_tts_status = 0
 }
 ```
 

@@ -5,7 +5,7 @@ resource "alicloud_click_house_db_cluster" "default" {
   db_cluster_network_type = "vpc"
   db_cluster_description  = var.db_description
   db_node_group_count     = var.db_node_group_count
-  payment_type            = "PayAsYouGo"
+  payment_type            = var.payment_type
   db_node_storage         = var.db_node_storage
   storage_type            = var.db_storage_type
   vswitch_id              = var.db_vswitch_id
